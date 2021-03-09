@@ -1,0 +1,160 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background-color: #ececec;
+  min-height: 100vh;
+}
+
+* {
+  font-family: Arial;
+  color: grey;
+}
+
+/* Styles title */
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+/* First margin value is top, second is right and left sides, third is bottom */
+h4 {
+  margin: 1em 0 0.75em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* Applies to italicized text */
+em {
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+table,
+tr,
+td {
+  border: silver 1px dotted;
+}
+
+.pixel-canvas {
+  background-color: white;
+}
+
+/* 'border-collapse' CSS property specifies whether a table's cells have shared or separate borders; 'collapse' value causes cells to have shared borders */
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  min-width: 20px;
+  box-sizing: border-box;
+}
+
+table {
+  border-radius: 17px;
+  overflow: hidden;
+}
+/* Styles height and width input boxes */
+input[type="number"] {
+  width: 3em;
+  border: 1px solid #dcdcdc;
+}
+
+/* Styles buttons, including a change of displayed mouse cursor to inform user he/she is hovering over something clickable */
+.submit-button,
+.quick-fill,
+.erase-mode,
+.draw-mode {
+  box-shadow: 1.5px 2px 7px 0px #d3d3d3db;
+  transition: all 250ms ease-in-out;
+  background: linear-gradient(#f9f9f9 5%, #e9e9e9 100%);
+  /* creates rounded edges (more pixels -> more rounded) */
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+  font-weight: bold;
+  /* Padding is space between element's content and border. First value sets top and bottom padding; second value sets right and left */
+  padding: 6px 24px;
+  text-decoration: none;
+  /* text-shadow: 0 1px #fff; */
+  cursor: pointer;
+  /* Places button on its own line */
+  display: block;
+  margin: 1em;
+  margin-left: 0;
+}
+.submit-button:hover,
+.quick-fill:hover,
+.erase-mode:hover,
+.draw-mode:hover {
+  box-shadow: none;
+}
+.color-picker {
+  border: 1px solid #dcdcdc;
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.color-picker::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+.color-picker::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+/* Styles content to left of grid */
+.inputs {
+  text-align: left;
+  margin-top: 5.35em;
+  border-radius: 7px;
+  border: 1px solid #dcdcdc;
+  padding: 0.5rem 0 1.5rem 2rem;
+  width: 200px;
+  background-color: white;
+}
+.input-height,
+.input-width {
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  -moz-appearance: textfield;
+}
+.input-height:hover,
+.input-width:hover {
+  box-shadow: none;
+}
+.row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 1200px;
+}
+.footer-copyRight {
+  position: relative;
+  bottom: -78px;
+}
+
+.footer-copyRight a {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.footer-copyRight a:hover {
+  text-decoration: underline;
+}
